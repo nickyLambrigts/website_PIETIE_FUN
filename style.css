@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(69, 152, 87)
+}
+
+h1 {
+    background-color: rgb(211, 127, 0);
+    color: #ffffff;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size:xx-large;
+}
+
+a{
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 6px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0 3px;
+}
+
+button :hover{
+    background-color: rgb(211, 127, 0);
+    color: #ffffff;
+}
+
+img{
+    margin-left: 0px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 500px;
+    height: 400px;
+}
+
+table{
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+tr td{
+     text-align: center;
+}
+
+tr td a{
+    background-color: transparent;
+}
+
+tr td a img{
+    margin-left: 0px;
+    width: 250px;
+    height: 200px;
+}
+
+tr td p a{
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 6px;
+}
+
+tr td p button :hover{
+    background-color: rgb(211, 127, 0);
+    color: #ffffff;
+}
+
+tr td p button{
+    background-color: none;
+    border: none;
+    padding: 0;
+    margin: 0 3px;
+}
