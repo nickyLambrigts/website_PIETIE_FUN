@@ -1,3 +1,55 @@
+/* ==========================================================================
+   1. GLOBALE RESPONSIVE INSTELLINGEN (Bovenaan style.css plaatsen)
+   ========================================================================== */
+
+/* Zorgt dat padding en borders binnen de opgegeven breedte blijven */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Zorgt dat afbeeldingen en kaarten nooit buiten het scherm steken */
+img, iframe, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Voorkomt horizontaal scrollen op mobiel */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* ==========================================================================
+   2. MOBIELE AANPASSINGEN (Voor telefoons en tablets tot 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  
+  /* Zet het vaste adresblokje op mobiel netjes onderaan de pagina */
+  body::after {
+    position: static !important;
+    display: block !important;
+    margin: 30px 15px 15px 15px !important;
+    font-size: 11px !important;
+    padding: 10px 12px !important;
+    width: calc(100% - 30px) !important;
+  }
+
+  /* Zorgt dat formulieren en kaarten de volledige mobiele breedte benutten */
+  .form-container, 
+  .map-container,
+  .locatie-container {
+    width: 95% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 15px !important;
+  }
+}
+
+
+
+
+
 body {
     background-color: rgb(69, 152, 87)
 }
@@ -166,4 +218,87 @@ tr td p button{
   background-image: url('A\ eten\ &\ drinken/Pizza truck/vlag.jpg'); /* Pas dit pad aan naar jouw JPG */
   background-size: cover;
   background-position: center;
+}
+
+
+
+/*voor de mail te kunnen versturen en cosmetica*/
+/* Styling voor het contactformulier */
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-groep {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-groep label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-groep input,
+.form-groep textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-groep input:focus,
+.form-groep textarea:focus {
+  border-color: rgb(69, 152, 87);
+  outline: none;
+}
+
+.verzend-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(69, 152, 87); /* Groene knop passend bij Pietie-Fun */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.verzend-btn:hover {
+  background-color: rgb(69, 152, 87);
+}
+/*voet tekst*/
+body::after {
+  content: "Straat: Grafheuvelstraat 23\A Gemeente: 3630 Maasmechelen\A Telefoonnummer: 0032 (0) 493/81.76.20\A E-mail: info@pietie-fun.be\A BTW: BE 1031.585.496";
+  white-space: pre-line !important; /* Dwingt de browser af om \A als enter te lezen */
+  display: block;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgb(211, 127, 0);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;                 /* Geeft nette ruimte tussen de regels */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
 }
