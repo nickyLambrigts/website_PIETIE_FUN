@@ -46,12 +46,7 @@ html, body {
   }
 }
 
-/* Zorgt dat ALLE foto's op de site automatisch schalen */
-img {
-  max-width: 100%;  /* De foto mag nooit breder worden dan het scherm/kader waar hij in zit */
-  height: auto;     /* De hoogte past zich automatisch aan, zodat de foto niet wordt uitgerekt of ingedrukt */
-  display: block;   /* Voorkomt ongewenste witruimte onder de foto */
-}
+
 
 
 
