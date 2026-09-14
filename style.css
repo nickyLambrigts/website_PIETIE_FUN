@@ -45,6 +45,8 @@ img{
     margin-right: auto; 
     width: 500px;
     height: 400px;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 table{
@@ -82,4 +84,86 @@ tr td p button{
     border: none;
     padding: 0;
     margin: 0 3px;
+}
+
+
+
+
+
+
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  max-width: 600px;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+/* Het zichtbare venster van 500px */
+.slider-wrapper {
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Speciﬁeke klasse voor een vierkante/hoge slider */
+.slider-wrapper.vierkant,
+.slider-wrapper.vierkant .slider-track img {
+  height: 500px;
+}
+
+/* De lange strook waarin alle foto's strak naast elkaar staan */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-track img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0; /* Zorgt dat foto's niet krimpen */
+}
+
+.slider-btn {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.slider-btn:hover {
+  background-color: #e0e0e0;
+}
+
+
+
+
+/*achtergorn voor sandro*/
+/* Algemene structuur voor een schermbrede achtergrondbalk */
+.slider-achtergrondbalk {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Unieke achtergrondafbeelding UITSLUITEND voor deze pagina */
+.pizza-balk {
+  background-image: url('A\ eten\ &\ drinken/Pizza truck/vlag.jpg'); /* Pas dit pad aan naar jouw JPG */
+  background-size: cover;
+  background-position: center;
 }

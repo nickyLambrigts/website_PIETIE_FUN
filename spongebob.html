@@ -43,9 +43,22 @@
         Maasmechelen.<br>
         Daarbuiten meerprijs op aanvraag.
     </p>
-    <img style="margin-left: 0px; display: block; margin-left: auto; margin-right: auto;" src="spongebob/IMG_3301.JPG"
-        alt="spongebob" width="500" height="400">
-
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="spongebob/IMG_3303.JPG" alt="spongebob">
+                <img src="spongebob/IMG_3304.JPG" alt="spongebob">
+                <img src="spongebob/IMG_3305.JPG" alt="spongebob">
+                <img src="spongebob/IMG_3306.JPG" alt="spongebob">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
 </body>
 
 </html>
