@@ -282,5 +282,6 @@ tr td p button{
 }
 
 .verzend-btn:hover {
-  background-color: rgb(69, 152, 87);
+  background-color: rgb(211, 127, 0);
+  color: white;
 }
