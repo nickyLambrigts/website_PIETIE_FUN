@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fairy</title>
 </head>
+
 <body>
     <h1>
         0032 (0) 493/81.76.20 / info@pietiefun.be
@@ -22,7 +24,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         Fairy Wonderland
@@ -30,7 +31,8 @@
     <p>
         wil je wegdromen in de wondere wereld van de feeën, springen, klimmen, klauteren en glijden?<br>
         Geniet van de mooie feeën op het kasteel, de prachtige eenhoorn en de haren van Rapunzel.<br>
-        Leef je uit in de wondere wereld van sprookjes, geniet van de vele obstakels voor op, over of onder te klimmen!<br>
+        Leef je uit in de wondere wereld van sprookjes, geniet van de vele obstakels voor op, over of onder te
+        klimmen!<br>
         Zeer zeker een eycatcher voor een communie, huwelijk, verjaardag of eender ander feest.<br>
         <br>
         De Fairy Wonderland heeft een grondoppervlakte van +- 6m op 5m en hij is +- 4m hoog.<br>
@@ -44,9 +46,26 @@
         Maasmechelen.<br>
         Daarbuiten meerprijs op aanvraag.
     </p>
-    <img style="margin-left: 0px; display: block; margin-left: auto; margin-right: auto;" src="fairy wonderland/61e97c49-c783-493a-863b-db7a1457b4e7.jpg"
-        alt="fairy wonderland" width="500" height="400">
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="fairy wonderland/61e97c49-c783-493a-863b-db7a1457b4e7.jpg" alt="fairy wonderland">
+                <img src="fairy wonderland/1.jpg" alt="fairy wonderland">
+                <img src="fairy wonderland/2.jpg" alt="fairy wonderland">
+                <img src="fairy wonderland/3.jpg" alt="fairy wonderland">
+                <img src="fairy wonderland/4.jpg" alt="fairy wonderland">
+                <img src="fairy wonderland/5.jpg" alt="fairy wonderland">
+                <img src="fairy wonderland/6.jpg" alt="fairy wonderland">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
 
-    
 </body>
+
 </html>

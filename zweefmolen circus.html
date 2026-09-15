@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zweefmolen circus</title>
 </head>
+
 <body>
     <h1>
         0032 (0) 493/81.76.20 / info@pietiefun.be
@@ -22,7 +24,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         zweefmolen circus
@@ -45,10 +46,28 @@
         <br>
         Wij kunnen onze attractie altijd aankleden in thema (mist dit vermeldt wordt) bv:<br>
         Pasen: pluche paasbeertjes aan de buitenste stoeltjes, ...<br>
-        kerst: pluche gnomen aan de buitenste stoeltjes, kerstslingers aan hekwerk, verlichting aan hekwerk en kassa, ...<br>
+        kerst: pluche gnomen aan de buitenste stoeltjes, kerstslingers aan hekwerk, verlichting aan hekwerk en kassa,
+        ...<br>
         <br>
         In thema van de klant kan ook altijd, hier vragen wij uiteraard wel de materialen aan te leveren.
     </p>
-    <img src="A Attracties/zweefmolen circus/IMG_1.jpg" alt="zweefmolen circus">
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="A Attracties/zweefmolen circus/IMG_1.jpg" alt="zweefmolen circus">
+                <img src="A Attracties/zweefmolen circus/2.jpg" alt="zweefmolen circus">
+                <img src="A Attracties/zweefmolen circus/4.jpg" alt="zweefmolen circus">
+                <img src="A Attracties/zweefmolen circus/5.jpg" alt="zweefmolen circus">
+                <img src="A Attracties/zweefmolen circus/6.jpg" alt="zweefmolen circus">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -22,7 +22,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         zweefmolen kabouter
@@ -49,6 +48,23 @@
         <br>
         In thema van de klant kan ook altijd, hier vragen wij uiteraard wel de materialen aan te leveren.
     </p>
-    <img src="A Attracties/Kabouter molen/1.jpg" alt="zweefmolen kabouter">
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="A Attracties/Kabouter molen/1.jpg" alt="zweefmolen kabouter">
+                <img src="A Attracties/Kabouter molen/2.jpg" alt="zweefmolen kabouter">
+                <img src="A Attracties/Kabouter molen/3.jpg" alt="zweefmolen kabouter">
+                <img src="A Attracties/Kabouter molen/4.jpg" alt="zweefmolen kabouter">
+                <img src="A Attracties/Kabouter molen/5.jpg" alt="zweefmolen kabouter">
+                <img src="A Attracties/Kabouter molen/6.jpg" alt="zweefmolen kabouter">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
 </body>
 </html>

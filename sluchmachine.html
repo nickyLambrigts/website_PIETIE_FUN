@@ -24,7 +24,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         SLUSH MASHINE
@@ -51,7 +50,18 @@
         (Klik<a style="background-color: transparent; text-decoration: none;" href="ingredienten slush.html"> HIER</a>
         voor de ingredienten)
     </p>
-    <img src="A eten & drinken/Slush-pup machine/1.JPG" alt="slush machine">
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="A eten & drinken/Slush-pup machine/1.JPG" alt="slush machine">
+                <img src="A eten & drinken/Slush-pup machine/2.JPG" alt="slush machine">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
     <!-- Alleen de koppeling naar je losse .js bestand -->
     <script src="script.js"></script>
 </body>

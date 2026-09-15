@@ -24,7 +24,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         Mini Play & Glide Jungle Aap
@@ -47,7 +46,21 @@
         Maasmechelen.<br>
         Daarbuiten meerprijs op aanvraag.
     </p>
-    <img src="mini play & glide jungle aap/47f6039f-d249-466f-9e25-108fc60ad801.jpg" alt="Mini Play & Glide Jungle Aap">
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="mini play & glide jungle aap/1.jpg" alt="Mini Play & Glide Jungle Aap">
+                <img src="mini play & glide jungle aap/2.jpg" alt="Mini Play & Glide Jungle Aap">
+                <img src="mini play & glide jungle aap/3.jpg" alt="Mini Play & Glide Jungle Aap">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
 
 </body>
 

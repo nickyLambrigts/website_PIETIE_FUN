@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>multiecolor XL</title>
 </head>
+
 <body>
     <h1>
         0032 (0) 493/81.76.20 / info@pietiefun.be
@@ -22,7 +24,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         multiecolor XL stormbaan
@@ -32,7 +33,8 @@
         Door zijn omvang en kleuren is hij dus echt een eyecatcher voor ieder feest, event, opendeurdag, enz.<br>
         <br>
         De multiecolor XL stormbaan heeft een grondoppervlakte van +- 21m op 4m en hij is +- 5m hoog.<br>
-        minimum doorgang van 1m voorzien en een vrije doorgang voorzien voor met onze camionette tot op de plaats te kunnen rijden.<br>
+        minimum doorgang van 1m voorzien en een vrije doorgang voorzien voor met onze camionette tot op de plaats te
+        kunnen rijden.<br>
         <br>
         1 dag: €295<br>
         2 dagen: €445<br>
@@ -42,7 +44,26 @@
         Maasmechelen.<br>
         Daarbuiten meerprijs op aanvraag.
     </p>
-    <img style="margin-left: 0px; display: block; margin-left: auto; margin-right: auto;"
-        src="stormbaan 21m/1.jpg" alt="stormbaan palmbomen" width="500" height="400">
+    <!-- DE FOTOSLIDER -->
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper">
+            <div class="slider-track" id="slider-track">
+                <img src="stormbaan 21m/1.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/2.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/3.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/4.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/5.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/7.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/8.jpg" alt="stormbaan 21m">
+                <img src="stormbaan 21m/9.jpg" alt="stormbaan 21m">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
 </body>
+
 </html>

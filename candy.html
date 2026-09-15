@@ -22,7 +22,6 @@
         <button><a href="Food.html">Food</a></button>
         <button><a href="Contact.html">Contact</a></button>
         <button><a href="ALg. voorwaarden.html">Algemene voorwaarden</a></button>
-        <button><a href="Partners.html">Partners</a></button>
     </p>
     <h2>
         Candy
@@ -46,8 +45,19 @@
         Maasmechelen.<br>
         Daarbuiten meerprijs op aanvraag.
     </p>
-    <img style="margin-left: 0px; display: block; margin-left: auto; margin-right: auto;" src="candy/IMG_4138.JPG"
-        alt="Candy" width="500" height="400">
+    <div class="slider-container">
+        <button class="slider-btn" onclick="veranderFoto(-1)">&#10094;</button>
+        <!-- Het wrapper-venster rond de foto -->
+        <div class="slider-wrapper vierkant">
+            <div class="slider-track" id="slider-track">
+                <img src="candy/IMG_4138.JPG" alt="candy">
+                <img src="candy/2.JPG" alt="candy">
+            </div>
+        </div>
+        <button class="slider-btn" onclick="veranderFoto(1)">&#10095;</button>
+    </div>
+    <!-- Alleen de koppeling naar je losse .js bestand -->
+    <script src="script.js"></script>
     
 </body>
 </html>
