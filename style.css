@@ -285,3 +285,10 @@ tr td p button{
   background-color: rgb(211, 127, 0);
   color: white;
 }
+/* Specifieke styling om de tabel-foto's langer te maken dan de rest */
+.mascotte-foto {
+  width: 250px !important;
+  height: 380px !important;     /* Maakt alleen deze foto's langer */
+  object-fit: cover !important; /* Voorkomt platdrukken of vervormen */
+  object-position: center !important;
+}
